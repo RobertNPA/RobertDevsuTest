@@ -47,6 +47,12 @@ stages:
         tags: |
           $(Tag)
           latest
+          
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Kubernetes Manifests'
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)/k8s'
+        ArtifactName: 'manifests'
 
 
 - stage: Deploy
