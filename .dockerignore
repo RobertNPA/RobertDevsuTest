@@ -1,0 +1,17 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.env
+
+# Tests
+*.test.js
+
+# Kubernetes
+k8s/
+azure-pipelines.yml
